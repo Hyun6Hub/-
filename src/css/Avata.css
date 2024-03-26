@@ -1,4 +1,17 @@
-
+.profile-name {
+  /* border: 1px solid blue; */
+  margin: 0;
+}
+.profile-title {
+  /* border: 1px solid green; */
+  margin: 0.5rem 0;
+  margin-bottom: 1rem;
+}
+.profile {
+  border: 1px solid gray;
+  width: 250px;
+  text-align: center;
+}
 .avata {
   /* border: 1px solid tomato; */
   width: 250px;

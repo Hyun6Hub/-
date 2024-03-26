@@ -1,8 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import './css/Commons.css';
-import Avata from './components/Avata.jsx';
-import AvataList from './components/AvataList.jsx';
+import Avata from '../components/Avata.jsx';
+import AvataList from '../components/AvataList.jsx';
 
 export default function App() {
   const list = [

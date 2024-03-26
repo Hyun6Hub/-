@@ -1,7 +1,7 @@
 import './css/Commons.css';
 import './App.css';
-import Menu from './components/Menu.jsx';
-import MenuList from './components/MenuList.jsx';
+import Menu from '../components/Menu.jsx';
+import MenuList from '../components/MenuList.jsx';
 
 export default function App() {
   const list = [
