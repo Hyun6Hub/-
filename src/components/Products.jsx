@@ -13,7 +13,7 @@ export default function Products() {
     .catch( error => console.log(error))
   }, []);
 
-  return (
+   return (
     <>
       <h1>Show Products!!</h1>
       <table border='1'>

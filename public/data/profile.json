@@ -2,7 +2,8 @@
   {
     "image": "images/people1.webp",
     "name": "James Kim",
-    "title": "Software Engineer"
+    "title": "Software Engineer",
+    "option": [{"sale": "세일"}]
   },
   {
     "image": "images/people2.webp",

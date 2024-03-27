@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: '나눔스퀘어라운드','나눔바른고딕' ;
+}
+.product-list {
+  /* border: 1px solid tomato; */
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+  margin: 3rem 0;
+  list-style-type: none;
+  border-bottom: 1px solid #777;
+}
+.product-info {
+  /* border: 1px solid gray; */
+  width: 215px;
+  height: 345px;
+  overflow: hidden;
+}
+.product-image-box {
+  /* border: 1px solid red; */
+  position: relative;
+  width: 215px;
+  height: 215px;
+}
+.product-image {
+  width: 100%;
+}
+.product-like {
+  position: absolute;
+  bottom : 0;
+  right: 0;
+  font-size: 2rem;
+  background-color: white;
+  padding: 3px;
+}
+.product-title {
+  width: 215px;
+  min-height: 62px;
+  padding: 2px 0;
+  line-height: 22px;
+  letter-spacing: .08em;
+  color: #000;
+  font-size: 16px;
+  text-align: left;
+  margin-top: 10px;
+  overflow: hidden;
+  font-family: "Noto Sans KR";
+}
+.product-price {
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.product-price-org {
+  color: #777;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: line-through;
+}
+.product-price-cur {
+  color: #e02020;
+  font-size: 24px;
+  word-spacing: -1px;
+}
