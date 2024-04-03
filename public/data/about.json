@@ -1,0 +1,35 @@
+{
+  "title": "About me",
+  "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit.\nIure natus, temporibus perspiciatis repudiandae nostrum modi\ndoloremque expedita non eius ipsum! Beatae porro adipisci\nomnis architecto dignissimos. Iusto ipsa inventore adipisci.",
+  "majorList": [
+    {
+      "icon": "html",
+      "title": "Front-end",
+      "desc": "HTML, CSS, JavaScript, TypeScript, React, WebAPIs"
+    },
+    {
+      "icon": "mobile",
+      "title": "Mobile",
+      "desc": "Android Studio, React Native, iOS, Swift, Java, Kotlin"
+    },
+    {
+      "icon": "server",
+      "title": "Back-end",
+      "desc": "Java, JavaScript, Go, Kotlin, Spring, Spring Boot"
+    }
+  ],
+  "jobList": [
+    {
+      "src": "images/jobs/samsung.png",
+      "alt": "samsung",
+      "name":"Samsung as Junior Software Engineer",
+      "period":"2019 Oct - Until now"
+    },
+    {
+      "src": "images/jobs/google.png",
+      "alt": "google",
+      "name":"Google as Junior Software Engineer",
+      "period":"2010 Oct - 2019 Oct"
+    }
+  ]
+}
