@@ -1,0 +1,23 @@
+[
+  {
+    "image": "images/testimonials/people1.webp",
+    "meta": "people1",
+    "bubble": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis similique, unde nam totam quam, nisi odio error amet provident iste modi eos dicta, eum suscipit rem illum inventore sapiente blanditiis?",
+    "name": "James Kim",
+    "company": "Google"
+  },
+  {
+    "image": "images/testimonials/people2.webp",
+    "meta": "people2",
+    "bubble": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis similique, unde nam totam quam, nisi odio error amet provident iste modi eos dicta, eum suscipit rem illum inventore sapiente blanditiis?",
+    "name": "Smith Park",
+    "company": "Samsung"
+  },
+  {
+    "image": "images/testimonials/people3.webp",
+    "meta": "people3",
+    "bubble": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis similique, unde nam totam quam, nisi odio error amet provident iste modi eos dicta, eum suscipit rem illum inventore sapiente blanditiis?",
+    "name": "Anna Jin",
+    "company": "Amazone"
+  }
+]

@@ -1,0 +1,17 @@
+
+.avata {
+  /* border: 1px solid tomato; */
+  width: 250px;
+  text-align: center;
+  padding: 1rem 0;
+}
+.avata-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  border: 3px solid gray;
+}
+.avata-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+}

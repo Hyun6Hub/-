@@ -1,0 +1,41 @@
+{
+  "title": "My Skills",
+  "description": "Skills & Attributes",
+  "content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit.Nobis beatae, aliquid ratione commodi nam ex voluptate rem eveniet cupiditate optio natus? Cum, harum eum sint id quodnulla adipisci. Sunt?",
+  "pList": [
+    {
+      "name": "HTML",
+      "value": 98
+    },
+    {
+      "name": "CSS",
+      "value": 90
+    },
+    {
+      "name": "JavaScript",
+      "value": 90
+    },
+    {
+      "name": "TypeScript",
+      "value": 80
+    },
+    {
+      "name": "React",
+      "value": 79
+    },
+    {
+      "name": "NodeJS",
+      "value": 68
+    }
+  ],
+  "toolsList": [
+    "Visual Studio Code",
+    "IntelliJ",
+    "Android Studio Code"
+  ],
+  "etcList": [
+    "Git",
+    "Scrum Master",
+    "SVN"
+  ]
+}

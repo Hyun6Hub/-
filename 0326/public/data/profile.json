@@ -1,0 +1,17 @@
+[
+  {
+    "image": "images/people1.webp",
+    "name": "James Kim",
+    "title": "Software Engineer"
+  },
+  {
+    "image": "images/people2.webp",
+    "name": "Kevin Park",
+    "title": "Network Engineer"
+  },
+  {
+    "image": "images/people3.webp",
+    "name": "Anna Jung",
+    "title": "Web Publisher"
+  }
+]
