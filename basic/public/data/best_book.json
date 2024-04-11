@@ -1,0 +1,70 @@
+[
+  {
+    "rank": "1",
+    "image": "https://image.aladin.co.kr/product/33584/88/cover200/k962939592_1.jpg",
+    "info": {
+          "kind": "국내도서",
+          "title": "로봇 드림",
+          "author": "사라 바론",
+          "publisher": "놀",
+          "pdate": "2024/03",
+          "price": 19800,
+          "sale_per" : 0.9,
+          "point": 990,
+          "review_count": 133,
+          "sales_point": 89240
+    },
+    "id": "1234"
+  },
+  {
+    "rank": "1",
+    "image": "https://image.aladin.co.kr/product/33651/8/cover200/k092939512_2.jpg",
+    "info": {
+          "kind": "국내도서",
+          "title": "로봇 드림",
+          "author": "사라 바론",
+          "publisher": "놀",
+          "pdate": "2024/03",
+          "price": 19800,
+          "sale_per" : 0.9,
+          "point": 990,
+          "review_count": 133,
+          "sales_point": 89240
+    },
+    "id": "1234"
+  },
+  {
+    "rank": "1",
+    "image": "https://image.aladin.co.kr/product/33705/44/cover200/8954698727_1.jpg",
+    "info": {
+          "kind": "국내도서",
+          "title": "로봇 드림",
+          "author": "사라 바론",
+          "publisher": "놀",
+          "pdate": "2024/03",
+          "price": 19800,
+          "sale_per" : 0.9,
+          "point": 990,
+          "review_count": 133,
+          "sales_point": 89240
+    },
+    "id": "1234"
+  },
+  {
+    "rank": "1",
+    "image": "https://image.aladin.co.kr/product/33626/89/cover200/k662939214_1.jpg",
+    "info": {
+          "kind": "국내도서",
+          "title": "로봇 드림",
+          "author": "사라 바론",
+          "publisher": "놀",
+          "pdate": "2024/03",
+          "price": 19800,
+          "sale_per" : 0.9,
+          "point": 990,
+          "review_count": 133,
+          "sales_point": 89240
+    },
+    "id": "1234"
+  }
+]

@@ -1,25 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
+import './css/Commons.css';
+import Avata from './components/Avata.jsx';
+import AvataList from './components/AvataList.jsx';
 
-function App() {
+export default function App() {
+  const list = [
+    {image:'images/avata.png', name:'Judy'},
+    {image:'images/people1.webp', name:'James'},
+    {image:'images/people2.webp', name:'Kevin'},
+    {image:'images/people3.webp', name:'Anna'}
+  ];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <AvataList list = {list} />
+    <Avata image='images/avata.png' name='Judy'/>
+    <Avata image='images/people1.webp' name='James'/>
+    <Avata image='images/people2.webp' name='Kevin'/>
+    <Avata image='images/people3.webp' name='Anna'/>
+    </>
   );
 }
 
-export default App;
+// indexe.html > index.js > App.js > Avata.jsx

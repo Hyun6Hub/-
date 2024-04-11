@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: '맑은 고딕','나눔바른고딕' ;
+}
+.book-list {
+  /* border: 1px solid tomato; */
+  display: flex;
+  justify-content: left;
+  align-items: baseline;
+  gap: 3rem;
+  list-style: none;
+  margin: 2rem 0;
+}
+.book {
+  /* border: 1px solid gray; */
+  width: 200px;
+  height: auto;
+}
+.book-image-box {
+  /* border: 1px solid red; */
+  position: relative;
+  width: 160px;
+  height: auto;
+  /* overflow: hidden; */
+}
+.book-image {
+  min-width: 100%;
+  height: auto;
+  border: 0.3px solid #eeeded;
+}
+.book-rank-icon {
+  /* border: 1px solid blue; */
+  position: absolute;
+  bottom : 5px;
+  right: -3.3rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-style: italic;
+  color: white;
+  background-color: rgb(253, 95, 121);
+  width: 36px;
+  height: 36px;
+  padding-left: 0.6rem;
+  border-radius: 100%;
+}
+.book-info {
+  /* border: 1px solid red; */
+  text-align: center;
+  padding: 0.2rem 0;
+}
+.book-info-title {
+  font-size: 14px;
+  font-weight: 700;
+}
+.book-author-company {
+  font-size: 13px;
+  color: #555555;
+  margin: 3px 0;
+}
+.book-price {
+  font-size: 14px;
+  text-align: center;
+  color:#c45959;
+  margin-bottom: 4px;
+}
