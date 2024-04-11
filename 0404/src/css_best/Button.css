@@ -1,0 +1,41 @@
+
+.button-cart,
+.button-buy,
+.button-list {
+  border:1px solid lightgray;
+  border-radius: 0.2rem;
+  font-weight: bold;
+  display:block;
+  width:100%;  
+  padding:8px 0;
+  margin-bottom:3px;  
+}
+
+.button-cart {
+  background-color: rgb(25,106,179);
+  color:#FFFFFF;
+}
+.button-buy {
+  background-color: rgb(25, 157, 179);
+  color:#FFFFFF;
+}
+.button-list {
+  background-color: white;
+  border: 1px solid blue;
+  color: blue;
+}
+
+
+/**
+* BestBook - 양탄자배송 
+*/
+.quick-delivery {
+  background-color: orange;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 2rem;
+  padding: 4px 8px;
+  margin: 0 6px 6px 0;
+}

@@ -1,0 +1,119 @@
+.best-book {
+  width: 850px;
+  margin: auto;
+  font-family: '나눔바른고딕';
+}
+.best-book-title {
+  margin-top: 2.5rem;
+  margin-left: 0.5rem;
+  font-size: 22px;
+  font-weight: bold;
+}
+.best-book-list {
+  /* border-bottom: 1px solid #ececec; */
+  /* padding-bottom: 1rem; */
+  width: 722px;
+  list-style-type: none;
+  margin: auto;
+  /* height: 244px; */
+}
+.best-book-list-content {
+  /* border: 1px solid blue; */
+  border-bottom: 1px solid #ececec;   
+  width: 722px;
+  /* height: 244px; */
+  display: flex;
+  margin: 2rem 0;
+  padding-bottom: 2rem;
+}
+.best-book-image-avata {
+  /* border: 2px solid green; */
+  width: 170px;
+  margin-top: 10px;
+}
+.best-book-image {
+  width: 150px;
+  height: 212px; 
+}
+.best-book-image-option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 11px;
+  /* border: 2px solid cyan; */
+}
+.best-book-info {
+  /* border: 1px solid cyan; */
+  width: 400px;
+  padding: 4px;
+  font-size: 12px;
+}
+.info-color {
+  color: rgb(213, 7, 120);
+}
+.best-book-info-title {
+  display: flex;
+  font-size: 14px;
+  gap: 6px;
+  margin-top : 10px;
+}
+.best-book-info-title-name {
+  color: blue;
+  font-weight: 700;
+}
+.best-book-info-title-name:hover {
+  text-decoration: underline;
+}
+.best-book-info-pub {
+  /* border: 1px solid cyan; */
+  display: flex;
+  gap: 10px;
+  font-size: 12px;
+  margin: 0.6rem 0;
+}
+.best-book-info-pub-author {
+  margin-right: 6px;
+}  
+.best-book-info-pub-author:hover {
+  text-decoration: underline;
+}
+.best-book-info-pub-publisher {
+  border: 1px solid #777;
+  padding: 0 0.5rem;
+  border-top: none;
+  border-bottom: none;
+}
+.best-book-info-price {
+  word-spacing: 0.2rem;
+  font-size: 11px;
+}
+.best-book-info-price-cur {
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 4px;
+}
+.best-book-info-sales {
+  display: flex;
+  margin: 8px 0;
+  gap: 10px;
+}
+.best-book-info-sales-review {
+  padding-right: 8px;
+  border-right: 1px solid #777;
+}
+.best-book-info-sales-point {
+  color: black;
+  font-size: 14px;
+  font-weight: 700;
+  margin-left: 4px;
+}
+.best-book-buy {
+  /* border: 1px solid green; */
+  width: 180px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: end;
+  margin-top: 10px;
+}
