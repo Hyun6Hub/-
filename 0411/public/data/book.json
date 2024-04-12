@@ -1,0 +1,82 @@
+[
+  {
+    "rank": "1",
+    "image": "https://image.aladin.co.kr/product/32941/79/cover/k032936148_2.jpg",
+    "title": "느리게 나이 드는 습관",
+    "author": "정희원",
+    "company": "한빛라이프",
+    "price": 16200,
+    "id": "1234",
+    "checked": false
+  },
+  {
+    "rank": "2",
+    "image": "https://image.aladin.co.kr/product/33613/76/cover/k762939916_1.jpg",
+    "title": "프로야구 스카우팅 리포트 2024",
+    "author": "최훈",
+    "company": "하빌리스",
+    "price": 20700,
+    "id": "1235",
+    "checked": false
+  },
+  {
+    "rank": "3",
+    "image": "https://image.aladin.co.kr/product/33513/93/cover/8993784817_3.jpg",
+    "title": "느리게 나이 드는 습관",
+    "author": "정희원",
+    "company": "한빛라이프",
+    "price": 16200,
+    "id": "1236",
+    "checked": false
+  },
+  {
+    "rank": "4",
+    "image": "https://image.aladin.co.kr/product/27124/76/cover/k272731146_1.jpg",
+    "title": "느리게 나이 드는 습관",
+    "author": "정희원",
+    "company": "한빛라이프",
+    "price": 16200,
+    "id": "1237",
+    "checked": false
+  },
+  {
+    "rank": "5",
+    "image": "https://image.aladin.co.kr/product/32941/79/cover/k032936148_2.jpg",
+    "title": "느리게 나이 드는 습관",
+    "author": "정희원",
+    "company": "한빛라이프",
+    "price": 16200,
+    "id": "1238",
+    "checked": false
+  },
+  {
+    "rank": "6",
+    "image": "https://image.aladin.co.kr/product/33613/76/cover/k762939916_1.jpg",
+    "title": "프로야구 스카우팅 리포트 2024",
+    "author": "최훈",
+    "company": "하빌리스",
+    "price": 20700,
+    "id": "1239",
+    "checked": false
+  },
+  {
+    "rank": "7",
+    "image": "https://image.aladin.co.kr/product/33513/93/cover/8993784817_3.jpg",
+    "title": "느리게 나이 드는 습관",
+    "author": "정희원",
+    "company": "한빛라이프",
+    "price": 16200,
+    "id": "1240",
+    "checked": false
+  },
+  {
+    "rank": "8",
+    "image": "https://image.aladin.co.kr/product/27124/76/cover/k272731146_1.jpg",
+    "title": "느리게 나이 드는 습관",
+    "author": "정희원",
+    "company": "한빛라이프",
+    "price": 16200,
+    "id": "1241",
+    "checked": false
+  }
+]
