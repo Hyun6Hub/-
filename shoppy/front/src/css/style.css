@@ -24,7 +24,7 @@ body, div, nav, ul, li, p {
 }
 
 .header, .footer, .content {
-  width: 1930px;
+  width: 1400px;
   margin: auto;
   /* border: 1px solid tomato; */
 }
@@ -75,7 +75,7 @@ body, div, nav, ul, li, p {
 .banner {
   /* border: 1px solid blue; */
   background-image: url('http://localhost:3000/images/banner.jpg');
-  width: 1930px;
+  width: 1400px;
   height: 400px;
   text-align: center;
   font-size: 20pt;
@@ -90,7 +90,7 @@ body, div, nav, ul, li, p {
 .product-list {
   /* border: 1px solid red; */
   display: flex;
-  padding-left: 10rem;
+  padding-left: 8rem;
 }
 
 .product-avata {
@@ -105,7 +105,114 @@ body, div, nav, ul, li, p {
   height: 380px;
 }
 
+.product-detail {
+  display: flex; 
+  gap: 2rem;
+  margin-top : 40px;
+  padding-left: 300px;
+  height : 800px;
+}
+.product-detail img {
+  width: 500px;
+  height: 580px;    
+}
+.product-detail ul {
+  list-style-type: none;  
+  width: 450px;
+  height: 580px;
+}
+.product-detail ul li {
+  margin: 5px 0;
+}
+.product-detail-title {
+  font-size: 18pt;
+  font-weight: bold;
+}
+.product-detail-subtitle {
+  border-top: 2px solid lightgray;
+  padding-top: 10px;
+  font-size: 10pt;
+}
+.product-detail-select1 {
+  font-size: 10pt;
+}
+.product-detail-select2 {
+  border: 1px dotted tomato;
+  width: 85%;
+  padding: 6px;
+  margin: 10px 0;
+}
+.product-detail-button {
+  background-color: var(--color-tomato);
+  width: 100%;
+  padding: 8px;
+  color: var(--color-white);
+  margin-top: 15px;
+  border: none;
+}
 
+/**
+  login
+*/
+.login, .signup {
+  /* border: 1px solid red; */
+  /* width: 400px; */
+  /* margin: auto; */
+  text-align: center;
+  height: 900px;
+  padding-top: 50px;
+}
+.login-form {
+  border: 1px solid blue;
+  width: 600px;
+  margin: auto;
+}        
+.login-form ul {
+  list-style-type: none;
+  margin-top: 15px;
+}
+.login-form ul li{
+  padding: 5px;
+}
+.login-form ul li:last-child{
+  margin-left: 80px;
+}
+.login-form ul li label{
+  /* border: 1px solid green; */
+  display: inline-block;
+  width: 100px;
+  padding: 3px;
+}
+.login-form ul li input{
+  border: 1px solid #7d7d7d;
+  display: inline-block;
+  width: 60%;
+  padding: 7px 10px;
+  border-radius: 4px;
+}
+.login-form button {
+  width: 120px;
+  padding: 7px 0;
+  background-color: var(--color-tomato);
+  border: none; 
+  border-radius: 4px; 
+  color: white;  
+  margin-top: 7px;
+}
+.login-form button:last-child {
+  background-color: #777;
+  margin-left: 20px;
+}
+
+/**
+* signup
+*/
+.signup-form {
+  border: 1px solid red;
+  width: 700px;
+  margin: auto;
+  text-align: left;
+}
 
 /**
   footer
