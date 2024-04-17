@@ -207,11 +207,15 @@ body, div, nav, ul, li, p {
 /**
 * signup
 */
-.signup-form {
+.signup {
   border: 1px solid red;
   width: 700px;
   margin: auto;
   text-align: left;
+}
+
+.signup-info {
+  list-style-type: none;
 }
 
 /**
