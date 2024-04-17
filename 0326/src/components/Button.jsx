@@ -1,9 +1,8 @@
-import React from 'react';
 
-export default function Button({name, count}) {
-    return (
-      <button class="category">
-        {name}<span class="category__count">{count}</span>
-      </button>
-    );
+// props = {text:'All'} => {props.text}
+// {text} = props       => {text}
+export default function Button({text, bg}) {
+  return(
+    <button style={{backgroundColor:bg}}>{text}</button>
+  );
 }
