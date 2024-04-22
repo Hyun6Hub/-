@@ -2,9 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 
-export default function DetailProduct() { /** GET : url을 통해 넘어오는 파라미터는 useParams hook!!  */
+export default function DetailProduct({addCartCount}) { /** GET : url을 통해 넘어오는 파라미터는 useParams hook!!  */
   const { id } = useParams();  
-  const [product, setProduct] = useState({});    
+  const [product, setProduct] = useState({});  
+  const [size, setSize] = useState('XS');  
 
   useEffect(()=>{
     axios.get('/data/product.json')
@@ -15,6 +16,17 @@ export default function DetailProduct() { /** GET : url을 통해 넘어오는 �
         });
       })
   }, []);
+
+  /**
+   * addCartItem : 장바구니 추가
+   */
+  const addCartItem = (id) => {
+    alert("장바구니에 담겼습니다.");
+    const cid = Math.floor(100 + Math.random() * 900);
+    addCartCount({cid:cid, id:id, size:size, qty:1});
+  }
+
+  // console.log('size---> ', size);
 
   
     return (
@@ -27,7 +39,8 @@ export default function DetailProduct() { /** GET : url을 통해 넘어오는 �
             <li className="product-detail-subtitle">{product.info}</li>
             <li>
               <span className='product-detail-select1'>옵션 : </span>
-              <select className='product-detail-select2'>
+              <select className='product-detail-select2'
+                      onChange={(e)=>setSize(e.target.value)}>
                 <option value="XS">XS</option>
                 <option value="S">S</option>
                 <option value="M">M</option>
@@ -36,7 +49,9 @@ export default function DetailProduct() { /** GET : url을 통해 넘어오는 �
               </select>
             </li>
             <li>
-              <button type="button" className='product-detail-button'>장바구니 추가</button>
+              <button type="button" 
+                      className='product-detail-button'
+                      onClick={()=>addCartItem(product.id)}>장바구니 담기</button>
             </li>
           </ul>
         </div>
