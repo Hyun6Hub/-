@@ -1,0 +1,202 @@
+{
+  "bestSeller" : {
+      "title" : "국내도서 종합 베스트",
+      "list": [
+        {
+          "rank": "1",
+          "image": "https://image.aladin.co.kr/product/33584/88/cover200/k962939592_1.jpg",
+          "info": {
+                "kind": "국내도서",
+                "title": "로봇 드림",
+                "author": "사라 바론",
+                "publisher": "놀",
+                "pdate": "2024/03",
+                "price": 19800,
+                "sale_per" : 0.9,
+                "point": 990,
+                "review_count": 133,
+                "sales_point": 89240
+          },
+          "id": "1234"
+        },
+        {
+          "rank": "2",
+          "image": "https://image.yes24.com/goods/125491624/L",
+          "info": {
+                "kind": "국내도서",
+                "title": "일류의 조건",
+                "author": "사이토 다카시",
+                "publisher": "놀",
+                "pdate": "2024/03",
+                "price": 19800,
+                "sale_per" : 0.9,
+                "point": 990,
+                "review_count": 133,
+                "sales_point": 89240
+          },
+          "id": "1234"
+        }  
+    ]
+  },
+  "realTime" : {
+      "title" : "국내도서 실시간 베스트",
+      "list": [
+        {
+          "rank": "1",
+          "image": "https://image.yes24.com/goods/124999476/L",
+          "info": {
+                "kind": "국내도서",
+                "title": "불변의 법칙",
+                "author": "사라 바론",
+                "publisher": "놀",
+                "pdate": "2024/03",
+                "price": 19800,
+                "sale_per" : 0.9,
+                "point": 990,
+                "review_count": 133,
+                "sales_point": 89240
+          },
+          "id": "1234"
+        } 
+    ]
+  },
+  "hotPrice" : {
+    "title" : "국내도서 특가 베스트",
+    "list": [
+      {
+        "rank": "1",
+        "image": "https://image.aladin.co.kr/product/9871/8/cover200/k042535550_2.jpg",
+        "info": {
+              "kind": "국내도서",
+              "title": "데미안 (오리지널 초판본 표지디자인)",
+              "author": "사라 바론",
+              "publisher": "놀",
+              "pdate": "2024/03",
+              "price": 19800,
+              "sale_per" : 0.9,
+              "point": 990,
+              "review_count": 133,
+              "sales_point": 89240
+        },
+        "id": "1234"
+      },
+      {
+        "rank": "1",
+        "image": "https://image.yes24.com/goods/93082287/L",
+        "info": {
+              "kind": "국내도서",
+              "title": "어린 왕자 (오리지널 초판본 표지디자인)",
+              "author": "앙투안 드 생텍쥐페리",
+              "publisher": "놀",
+              "pdate": "2024/03",
+              "price": 19800,
+              "sale_per" : 0.9,
+              "point": 990,
+              "review_count": 133,
+              "sales_point": 89240
+        },
+        "id": "1234"
+      }
+  ]
+  },
+  "day" : {
+    "title" : "국내도서 일별 베스트",
+    "list": [
+      {
+        "rank": "1",
+        "image": "https://image.yes24.com/goods/125295101/L",
+        "info": {
+              "kind": "국내도서",
+              "title": "나를 소모하지 않는 현명한 태도에 관하여",
+              "author": "마티아스 뇔케",
+              "publisher": "놀",
+              "pdate": "2024/03",
+              "price": 19800,
+              "sale_per" : 0.9,
+              "point": 990,
+              "review_count": 133,
+              "sales_point": 89240
+        },
+        "id": "1234"
+      },
+      {
+        "rank": "1",
+        "image": "https://image.aladin.co.kr/product/9871/8/cover200/k042535550_2.jpg",
+        "info": {
+              "kind": "국내도서",
+              "title": "데미안 (오리지널 초판본 표지디자인)",
+              "author": "사라 바론",
+              "publisher": "놀",
+              "pdate": "2024/03",
+              "price": 19800,
+              "sale_per" : 0.9,
+              "point": 990,
+              "review_count": 133,
+              "sales_point": 89240
+        },
+        "id": "1234"
+      }
+  ]
+  },
+  "monthweekly" : {
+    "title" : "국내도서 월별 베스트",
+    "list": [
+      {
+        "rank": "1",
+        "image": "https://image.yes24.com/goods/124999476/L",
+        "info": {
+              "kind": "국내도서",
+              "title": "불변의 법칙",
+              "author": "사라 바론",
+              "publisher": "놀",
+              "pdate": "2024/03",
+              "price": 19800,
+              "sale_per" : 0.9,
+              "point": 990,
+              "review_count": 133,
+              "sales_point": 89240
+        },
+        "id": "1234"
+      },
+      {
+        "rank": "1",
+        "image": "https://image.aladin.co.kr/product/9871/8/cover200/k042535550_2.jpg",
+        "info": {
+              "kind": "국내도서",
+              "title": "데미안 (오리지널 초판본 표지디자인)",
+              "author": "사라 바론",
+              "publisher": "놀",
+              "pdate": "2024/03",
+              "price": 19800,
+              "sale_per" : 0.9,
+              "point": 990,
+              "review_count": 133,
+              "sales_point": 89240
+        },
+        "id": "1234"
+      }
+  ]
+  },
+  "steady" : {
+    "title" : "국내도서 스테디셀러",
+    "list": [
+      {
+        "rank": "1",
+        "image": "https://image.aladin.co.kr/product/20027/84/cover200/8954657125_3.jpg",
+        "info": {
+              "kind": "국내도서",
+              "title": "아침 그리고 저녁",
+              "author": "사라 바론",
+              "publisher": "놀",
+              "pdate": "2024/03",
+              "price": 19800,
+              "sale_per" : 0.9,
+              "point": 990,
+              "review_count": 133,
+              "sales_point": 89240
+        },
+        "id": "1234"
+      } 
+  ]
+  }
+}
