@@ -3,6 +3,7 @@ import cors from "cors";
 import homeRouter from "./router/homeRouter.js";
 import productRouter from "./router/productRouter.js";
 import cartsRouter from "./router/cartsRouter.js";
+import memberRouter from "./router/memberRouter.js";
 
 const server = express();
 const port = 8080;
@@ -15,6 +16,8 @@ server.use(cors());
 server.use("/", homeRouter); /*홈페이지 다루는 라우터  */
 server.use("/products", productRouter); /* 제품페이지 서버로 쓰려고 가져옴 */
 server.use("/carts", cartsRouter);
+server.use("/member", memberRouter); /* 대표이름 */
+
 // get : req.params, POST : req.body
 
 /* 반복이되면 대표이름 라우터로 */

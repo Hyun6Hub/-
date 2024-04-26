@@ -3,6 +3,7 @@ import * as repository from "../repository/productRepository.js";
 
 export const getProduct = async (req, res, next) => {
   const product = await repository.getProduct(req.params.id);
+  /* 요청된 상품 id 가져옴 */
   res.json(product);
   res.end();
 };

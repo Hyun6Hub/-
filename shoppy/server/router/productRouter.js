@@ -3,7 +3,10 @@ import * as controller from "../controller/productController.js";
 
 const router = express.Router();
 
-router.get("/all", controller.getProducts).get("/:id", controller.getProduct);
+router
+  .get("/all", controller.getProducts)
+  /* all경로에 대한 get요청을 controller getProducts로 연결 */
+  .get("/:id", controller.getProduct);
 /* 체이닝하면 라우터지워도됨 */
 
 // router.get("/all", (req, res, next) => {

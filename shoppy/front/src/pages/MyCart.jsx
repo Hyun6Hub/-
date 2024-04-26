@@ -11,7 +11,7 @@ export default function MyCart({ cartItems, removeCartItem }) {
       url: url,
       data: { items: cartItems }, //{ name: "호랑이", age: 20 } 해도됨
     })
-      .then((res) => setCartList(res.data))
+      .then((res) => setCartList([]))
       .catch((error) => console.log(error));
     // .post(url, { name: "호랑이", age: 20 })
   }, []);
