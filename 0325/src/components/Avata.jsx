@@ -1,6 +1,6 @@
-import '../css/Avata.css';
+import "../css/Avata.css";
 
-export default function Avata({image, name}) {
+export default function Avata({ image, name }) {
   return (
     <div className="avata">
       <img src={image} className="avata-img"></img>
@@ -8,4 +8,3 @@ export default function Avata({image, name}) {
     </div>
   );
 }
-
