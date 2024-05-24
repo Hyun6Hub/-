@@ -30,37 +30,30 @@ export const insert = async (productData) => {
 /**
  * 개별 상품 파일 읽어오기
  */
-export const getProduct = (id) => {
-  const path = "data/product.json";
-  const product = fsPromises
-                      .readFile(path, "utf-8")
-                      .then(data => { 
-                        const jsonData = JSON.parse(data);
-                        const product = jsonData
-                                        .filter(item => item.id === id); 
-                        return product[0];
-                      })
-                      .catch(error => console.log(error));
-  return  product;                     
+export const getProduct = async(id) => {
+  const sql = `
+      select pid as id, name, price, info, image
+          from shoppy_product
+          where pid = ?
+  `;
+
+  return db
+          .execute(sql, [id])
+          .then(result => result[0][0]) ; //  {} 
 }
 
 /**
  * 전체 상품 파일 읽어오기
  */
-export const getProducts = () => {
+export const getProducts = async() => {
   const sql = `
-      select pid as id, image from shoppy_product 
-          order by pdate
+        select pid as id, image 
+            from shoppy_product  
+            order by pdate
   `;
 
-  return db 
+  return db
           .execute(sql)
-          .then((rows) => rows[0]);
+          .then(result => result[0]);  // [{},{}..]
 
-  // const path = "data/product.json";
-  // const products = fsPromises
-  //                     .readFile(path, "utf-8")
-  //                     .then(data => JSON.parse(data))
-  //                     .catch(error => console.log(error));
-  // return  products;                     
 }

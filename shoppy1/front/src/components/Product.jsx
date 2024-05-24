@@ -13,7 +13,7 @@ export default function Product() {
 
   }, []);
 
-  console.log('productList--->>', productList);
+  // console.log('productList--->>', productList);
 
   //출력리스트 갯수 설정
   const rows = [];  
