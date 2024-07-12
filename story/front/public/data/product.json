@@ -1,0 +1,51 @@
+[
+  {
+    "id": "1",
+    "image": "/images/1.webp",
+    "name": "사이다",
+    "price": 2000,
+    "info": "스트라이프"
+  },
+  {
+    "id": "2",
+    "image": "/images/2.webp",
+    "name": "소시지",
+    "price": 4000,
+    "info": "정통 유럽식"
+  },
+  {
+    "id": "3",
+    "image": "/images/3.webp",
+    "name": "치약",
+    "price": 2500,
+    "info": "1+1"
+  },
+  {
+    "id": "4",
+    "image": "/images/4.webp",
+    "name": "페브리즈",
+    "price": 1800,
+    "info": "향균"
+  },
+  {
+    "id": "5",
+    "image": "/images/5.webp",
+    "name": "컵밥",
+    "price": 3800,
+    "info": "맛있는 미역국"
+  },
+  {
+    "id": "6",
+    "image": "/images/6.webp",
+    "name": "홈키파",
+    "price": 2000,
+    "info": "모기 잘잡아요"
+  },
+  {
+    "id": "7",
+    "image": "/images/7.webp",
+    "name": "마스크",
+    "price": 1000,
+    "info": "황사, 미세먼지 차단해요"
+  }
+]
