@@ -1,89 +1,22 @@
 import "./css/style.css";
-
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home";
-import AllProducts from "./pages/AllProducts";
-import NewProduct from "./pages/NewProduct";
-import MyCart from "./pages/MyCart";
-import Login from "./pages/Login";
-import Signup from "./pages/Signup";
-import DetailProduct from "./pages/DetailProduct";
-import Root from "./pages/Root";
-import { useState } from "react";
+
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 function App() {
   const [cartCount, setCartCount] = useState(0);
   const [cartItems, setCartItems] = useState([]);
-  /* cartitems 초기에는 장바구니에 담긴 상품 없을수있어서 빈배열로 시작 */
-
-  // const removeCartCount = (qty) => {
-  //   setCartCount(cartCount-qty);
-  // }
-
-  //cartItem 삭제
-  const removeCartItem = (cid, qty) => {
-    /* cid는 제거할 상품의 고유식별자, qty는 상품수량 */
-    const removeIndex = cartItems.findIndex((item) => item.cid === cid);
-    /* cartItems배열에서 findeIndex메서드를 사용하여 첫번째 인덱스를 찾음 */
-    /* 배열의 각요소를 반복하면서 cid속성 일치 확인 */
-    const updateCartList = cartItems.filter((item, i) => i !== removeIndex);
-
-    setCartItems(updateCartList);
-    setCartCount(cartCount - qty);
-  };
-
-  // 장바구니 추가
-  const addCartCount = (item) => {
-    console.log("item--> ", item); //{id:1, size:XS, qty:1}
-
-    //cartItems에 item 추가!! - 상품아이디와 사이즈가 동일한 경우에는 수량을 하나 증가시킴!
-    //1. 상품아이디와 사이즈가 동일한 아이템이 있으면 해당 인덱스를 저장 - findIndex
-    const updateItemIndex = cartItems.findIndex(
-      (cartItem) => cartItem.id === item.id && cartItem.size === item.size
-    );
-    console.log("index--", updateItemIndex);
-    //2. 인덱스가 -1 이 아니면 ==> qty 증가
-    //   -1 이면 새로 추가
-    if (updateItemIndex !== -1) {
-      // 기존 item 존재
-      const updateItems = [...cartItems];
-      updateItems[updateItemIndex].qty++;
-      setCartItems(updateItems);
-    } else {
-      // 새로운 item
-      setCartItems([...cartItems, item]);
-    }
-
-    setCartCount(cartCount + 1);
-  };
-  console.log("App :: cartItems--> ", cartItems);
+  return <RouterProvider router={router} />;
 
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <Root cartCount={cartCount} /> /** layout 정의 */,
-      // loader: rootLoader,
-      children: [
-        { path: "/", element: <Home /> },
-        { path: "/products", element: <AllProducts /> },
-        {
-          path: "/products/:id",
-          element: <DetailProduct addCartCount={addCartCount} />,
-        },
-        { path: "/products/new", element: <NewProduct /> },
-        {
-          path: "/carts",
-          element: (
-            <MyCart cartItems={cartItems} removeCartItem={removeCartItem} />
-          ),
-        },
-        { path: "/login", element: <Login /> },
-        { path: "/signup", element: <Signup /> },
-      ],
+      element: <Root cartCount={cartCount} />,
+      children: [{ path: "/", element: <Home /> }],
     },
   ]);
-
-  return <RouterProvider router={router} />;
 }
 
 export default App;

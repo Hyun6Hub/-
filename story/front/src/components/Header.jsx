@@ -9,7 +9,7 @@ export default function Header({ cartCount }) {
       <div className="header">
         <Link to="/" className="header-left">
           <FiShoppingBag />
-          <span>황씨네 편의점</span>
+          <span>황씨네 편의점 24시</span>
         </Link>
         <nav className="header-right">
           <Link to="/products">제품</Link>
@@ -23,6 +23,20 @@ export default function Header({ cartCount }) {
           <Link to="/products/new">
             <BsFillPencilFill className="header-right-icon" />
           </Link>
+        </nav>
+      </div>
+      <div className="sub-menu">
+        <nav>
+          <Link to="/food">식품</Link>
+          <Link to="/drinks">음료</Link>
+          <Link to="/snacks">과자</Link>
+          <Link to="/daily">생활용품</Link>
+          <Link to="/etc">기타</Link>
+        </nav>
+      </div>
+      <div>
+        <nav>
+          <Link to="/board">게시판</Link>
         </nav>
       </div>
     </div>

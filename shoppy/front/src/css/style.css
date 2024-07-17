@@ -3,10 +3,10 @@
 */
 :root {
   /* color list */
-  --color-primary : rgb(220, 220, 220);
+  --color-primary: rgb(220, 220, 220);
   --color-black: #050a13;
   --color-white: #ffffff;
-  --color-tomato : tomato;
+  --color-tomato: tomato;
 }
 
 /**
@@ -14,16 +14,25 @@
 */
 * {
   box-sizing: border-box;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
 }
 
-.header, .footer, .content, 
-body, div, nav, ul, li, p {
+.header,
+.footer,
+.content,
+body,
+div,
+nav,
+ul,
+li,
+p {
   margin: 0;
   padding: 0;
 }
 
-.header, .footer, .content {
+.header,
+.footer,
+.content {
   width: 1400px;
   margin: auto;
   /* border: 1px solid tomato; */
@@ -42,9 +51,9 @@ body, div, nav, ul, li, p {
   /* border: 1px solid red; */
   height: 70px;
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   padding: 15px 20px;
-  background-color: var(--color-primary); 
+  background-color: var(--color-primary);
 }
 
 .header-left {
@@ -53,7 +62,7 @@ body, div, nav, ul, li, p {
   font-size: 1.5rem;
 }
 
-.header-right *{
+.header-right * {
   text-decoration: none;
   color: var(--color-black);
   margin: 3px 5px;
@@ -74,7 +83,7 @@ body, div, nav, ul, li, p {
 */
 .banner {
   /* border: 1px solid blue; */
-  background-image: url('http://localhost:3000/images/banner.jpg');
+  background-image: url("http://localhost:3000/images/banner.jpg");
   width: 1400px;
   height: 400px;
   text-align: center;
@@ -106,18 +115,18 @@ body, div, nav, ul, li, p {
 }
 
 .product-detail {
-  display: flex; 
+  display: flex;
   gap: 2rem;
-  margin-top : 40px;
+  margin-top: 40px;
   padding-left: 300px;
-  height : 800px;
+  height: 800px;
 }
 .product-detail img {
   width: 500px;
-  height: 580px;    
+  height: 580px;
 }
 .product-detail ul {
-  list-style-type: none;  
+  list-style-type: none;
   width: 450px;
   height: 580px;
 }
@@ -154,7 +163,8 @@ body, div, nav, ul, li, p {
 /**
   login
 */
-.login, .signup {
+.login,
+.signup {
   /* border: 1px solid red; */
   /* width: 400px; */
   /* margin: auto; */
@@ -166,24 +176,24 @@ body, div, nav, ul, li, p {
   border: 1px solid blue;
   width: 600px;
   margin: auto;
-}        
+}
 .login-form ul {
   list-style-type: none;
   margin-top: 15px;
 }
-.login-form ul li{
+.login-form ul li {
   padding: 5px;
 }
-.login-form ul li:last-child{
+.login-form ul li:last-child {
   margin-left: 80px;
 }
-.login-form ul li label{
+.login-form ul li label {
   /* border: 1px solid green; */
   display: inline-block;
   width: 100px;
   padding: 3px;
 }
-.login-form ul li input{
+.login-form ul li input {
   border: 1px solid #7d7d7d;
   display: inline-block;
   width: 60%;
@@ -194,9 +204,9 @@ body, div, nav, ul, li, p {
   width: 120px;
   padding: 7px 0;
   background-color: var(--color-tomato);
-  border: none; 
-  border-radius: 4px; 
-  color: white;  
+  border: none;
+  border-radius: 4px;
+  color: white;
   margin-top: 7px;
 }
 .login-form button:last-child {
@@ -228,7 +238,7 @@ body, div, nav, ul, li, p {
 .footer {
   /* background-color: var(--color-primary); */
   background-color: #777;
-  color : var(--color-white);
+  color: var(--color-white);
   height: 100px;
   font-size: 12px;
   padding: 10px 20px;
@@ -237,3 +247,13 @@ body, div, nav, ul, li, p {
   margin: 7px 5px;
 }
 
+/** 회원가입 - 주소검색 모달 */
+.postmodal {
+  background: rgba(0, 0, 0, 0.25);
+  position: fixed;
+  left: 55%;
+  top: 30%;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #777;
+}

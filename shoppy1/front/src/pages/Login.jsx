@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
+
 export default function Login() {
   const navigate = useNavigate();
   const userIdRef = useRef(null);
@@ -32,12 +33,10 @@ export default function Login() {
         .then((res) => {
           // console.log('result ->', res.data);
           if(res.data.cnt === 1){
-            alert("로그인 성공!!");
+            alert("로그인 성공!!"); 
             navigate("/");  //홈으로 이동
           } else {
             alert("로그인 실패, 다시 입력해주세요");
-            // userIdRef.current.value = "";
-            // userPassRef.current.value = "";
             setFormData({userId:'', userPass:''});
             userIdRef.current.focus();
           }

@@ -1,15 +1,11 @@
-import { Route, Routes } from "react-router-dom";
-import BoardList from "./routes/BoardList";
-import React from "react";
-import Home from "./routes/Home";
+import "./css/style.css";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Home from "./pages/Home";
+
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 function App() {
-  return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="board" element={<BoardList />} />
-    </Routes>
-  );
+  
+  const [cartCount, setCartCount]
 }
-
-export default App;

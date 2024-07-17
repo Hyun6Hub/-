@@ -1,26 +1,32 @@
-import express from "express";
-import cors from "cors";
-import homeRouter from "./router/homeRouter.js";
-import productRouter from "./router/productRouter.js";
-import cartsRouter from "./router/cartsRouter.js";
-import memberRouter from "./router/memberRouter.js";
+import express from 'express';
+import cors from 'cors';
+import homeRouter from './router/homeRouter.js';
+import productRouter from './router/productRouter.js';
+import cartsRouter from './router/cartsRouter.js';
+import memberRouter from './router/memberRouter.js';
+import uploadRouter from './router/uploadRouter.js';
+import boardRouter from './router/boardRouter.js';
+import path from 'path';
 
 const server = express();
 const port = 8080;
 
-/* 공통적인 요청 */
+/** 공통적인 요청 */
 server.use(express.json());
-server.use(express.urlencoded());
+server.use(express.urlencoded());  
 server.use(cors());
+server.use('/uploads', express.static(path.join('uploads')));
 
-server.use("/", homeRouter); /*홈페이지 다루는 라우터  */
-server.use("/products", productRouter); /* 제품페이지 서버로 쓰려고 가져옴 */
-server.use("/carts", cartsRouter);
-server.use("/member", memberRouter); /* 대표이름 */
+server.use('/', homeRouter);
+server.use('/product', productRouter);
+server.use('/carts', cartsRouter);
+server.use('/member', memberRouter);
+server.use('/upload', uploadRouter);
+server.use('/board', boardRouter);
 
-// get : req.params, POST : req.body
 
-/* 반복이되면 대표이름 라우터로 */
-server.listen(port, () => {
+
+
+server.listen(port, ()=>{
   console.log(`server start ===>> ${port}`);
 });

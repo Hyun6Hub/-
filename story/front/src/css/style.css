@@ -41,6 +41,7 @@ p {
 .tname {
   text-align: center;
   font-size: 24px;
+  padding-top: 40px;
 }
 
 /**
@@ -260,4 +261,31 @@ p {
 }
 .footer p {
   margin: 7px 5px;
+}
+/* 기존 스타일은 유지하고 아래 스타일을 추가합니다 */
+
+.sub-menu {
+  background-color: #f0f0f0;
+  padding: 10px 0;
+}
+
+.sub-menu nav {
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sub-menu nav a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 0.9rem;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.sub-menu nav a:hover {
+  background-color: #e0e0e0;
 }

@@ -36,3 +36,7 @@ export default function App() {
 }
 
 // profileList는 json파일에서 가져온 데이터를 담는 변수
+
+// js파일에서 정보 적고 jsx에서 그 정보를 가져와 사용한다
+// profile 컴포넌트 가져오는데 그안에 avata컴포넌트도 있다
+// profile 컴포넌트에서 개별적으로 렌더링 가능하게함

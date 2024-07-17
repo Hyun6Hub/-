@@ -48,8 +48,10 @@ slice는 length 보다 초과하면 안된다
     <>
       {rows.map((row) => (
         <ul className="product-list">
+          {/* 각 row 순회하며 ul요소 생성 */}
           {row.map((product) => (
             <li>
+              {/* 각요소를 li로 나열 */}
               <div key={product.pid} className="product-info">
                 <ProductImage img={product.image} />
                 <ProductTitle title={product.title} />
@@ -83,7 +85,7 @@ slice는 length 보다 초과하면 안된다
 export function ProductPrice({ price, sale_per }) {
   const price_org = price.toLocaleString();
   const price_cur = (price * sale_per).toLocaleString();
-
+  //가격을 문자열로 변환
   return (
     <div className="product-price">
       <p className="product-price-org">{price_org}원</p>
