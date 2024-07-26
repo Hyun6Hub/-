@@ -1,0 +1,73 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
+/* src/pages/Home.css */
+.background {
+  background-color: #f0f0f0; /* 원하는 배경색으로 변경 */
+  padding: 20px; /* 배경색과 내용 간의 여백을 추가 */
+  border-radius: 5px; /* 모서리를 둥글게 설정 (선택 사항) */
+  margin-bottom: 20px; /* 섹션 간의 간격을 추가 (선택 사항) */
+}
+
+/* .input-container, .input-box 스타일을 정의합니다. */
+.input-container {
+  margin: 20px 0;
+}
+
+.input-box {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* src/pages/Home.css */
+.background {
+  background-color: #f0f0f0; /* 원하는 배경색으로 변경 */
+  padding: 20px; /* 배경색과 내용 간의 여백을 추가 */
+}
+
+.input-container {
+  margin: 20px 0;
+  position: relative; /* 아이콘 위치 조정을 위한 설정 */
+}
+
+.input-box {
+  width: 300px;
+  padding: 10px;
+  padding-right: 40px; /* 아이콘 크기만큼 여백을 추가 */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.input-icon {
+  position: absolute;
+  right: 10px; /* 입력 필드 오른쪽에서 10px 떨어지도록 설정 */
+  font-size: 20px; /* 아이콘 크기 조정 */
+  color: #007bff; /* 아이콘 색상 변경 */
+}
+
+.input-wrapper {
+  width: fit-content;
+  background-color: pink;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  margin: 0 auto;
+
+  input {
+    background-color: transparent;
+    border: none;
+
+    &::placeholder {
+      color: white;
+    }
+  }
+
+  i {
+    position: static;
+    display: block;
+    cursor: pointer;
+  }
+}

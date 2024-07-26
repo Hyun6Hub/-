@@ -1,49 +1,78 @@
-import React, { useState, useEffect }  from 'react';
-import ProductAvata from './ProductAvata';
-import { Link } from 'react-router-dom';
-import axios from 'axios';
+import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
+import "./Product.css"; // CSS 파일을 import 합니다
 
 export default function Product() {
   const [productList, setProductList] = useState([]);
+  const navigate = useNavigate(); // useNavigate 훅 사용
 
   useEffect(() => {
-    axios.get('/data/product.json')
-      .then(res => {
-        // console.log(res.data);
-        const data = res.data;
+    axios
+      .get("/data/product.json")
+      .then((res) => {
+        console.log("Server response:", res.data);
+        const data = res.data.map((product) => ({
+          ...product,
+          clickCount: 0,
+          image: product.image.startsWith("http")
+            ? product.image
+            : `${process.env.PUBLIC_URL}${product.image}`,
+        }));
         setProductList(data);
-      } )
-      .catch(error => console.log(error));
-
-    // fetch('/data/product.json')   //1. url 접속
-    //   .then(res => res.json())    //2. 문자열 데이터 반환 -> json 데이터 변환
-    //   .then(result => setProductList(result))  //3. json 데이터 반환 -> 로직처리
-    //   .catch(error => console.log(error))
+      })
+      .catch((error) => console.log("Error fetching data:", error));
   }, []);
 
-  //출력리스트 갯수 설정
-  const rows = [];  
-  for(let i=0; i < productList.length; i+=3){ // [{0},{1},{2},{3}]  {4}
-      rows.push(productList.slice(i, i+3));  // [{0},{1},{2},{3}]
-  }
-  /**
-   * rows[][]
-   * [0] -> [{0},{1},{2},{3}]
-   * [1] -> [{4},{5},{6}]
-   */
-
-    return (
-      <div>
-        {rows.map((rowArray, index) => (
-          <div key={index} className='product-list'>
-            {rowArray.map(product => (
-              <Link to={`/products/${product.id}`}>
-                <ProductAvata image={product.image}/>
-              </Link>
-            ))}
-          </div>
-        ))}
-      </div>
+  const handleProductClick = (id) => {
+    setProductList((prevList) =>
+      prevList
+        .map((product) =>
+          product.id === id
+            ? { ...product, clickCount: product.clickCount + 1 }
+            : product
+        )
+        .sort((a, b) => b.clickCount - a.clickCount)
     );
-}
+    navigate(`/product/${id}`); // 클릭 시 해당 제품 상세 페이지로 이동
+  };
 
+  const getBadge = (index) => {
+    switch (index) {
+      case 0:
+        return "🥇 1위";
+      case 1:
+        return "🥈 2위";
+      case 2:
+        return "🥉 3위";
+      default:
+        return null;
+    }
+  };
+
+  return (
+    <div className="product-grid">
+      {productList.map((product, index) => (
+        <div
+          key={product.id}
+          className="product-item"
+          onClick={() => handleProductClick(product.id)}
+        >
+          {product.image && (
+            <img
+              src={product.image}
+              alt={product.name}
+              onError={(e) => {
+                console.error(`Failed to load image for ${product.name}`);
+                e.target.src = "/path/to/fallback/image.jpg";
+              }}
+            />
+          )}
+          <h3>{product.name}</h3>
+          {index < 3 && <span className="badge">{getBadge(index)}</span>}
+          <p>클릭: {product.clickCount}</p>
+        </div>
+      ))}
+    </div>
+  );
+}

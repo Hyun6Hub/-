@@ -1,5 +1,4 @@
 import "./css/style.css";
-
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home";
 import AllProducts from "./pages/AllProducts";
@@ -9,23 +8,27 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import DetailProduct from "./pages/DetailProduct";
 import Root from "./pages/Root";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Food from "./pages/Food";
 import Drinks from "./pages/Drinks";
 import { Snacks } from "./pages/Snacks";
 import { Daily } from "./pages/Daily";
 import { Etc } from "./pages/Etc";
-import Board from "./pages/Board";
+import Product from "./components/Product";
+import Modal from "./components/Modal";
 
 function App() {
   const [cartCount, setCartCount] = useState(0);
   const [cartItems, setCartItems] = useState([]);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
-  // const removeCartCount = (qty) => {
-  //   setCartCount(cartCount-qty);
-  // }
+  useEffect(() => {
+    // if (process.env.NODE_ENV === 'production') 지우면 모달뜸
+    if (process.env.NODE_ENV === "production") setIsModalOpen(true); // 컴포넌트 마운트 시 모달을 자동으로 엽니다.
+  }, []);
 
-  //cartItem 삭제
+  const closeModal = () => setIsModalOpen(false);
+
   const removeCartItem = (cid, qty) => {
     const removeIndex = cartItems.findIndex((item) => item.cid === cid);
     const updateCartList = cartItems.filter((item, i) => i !== removeIndex);
@@ -33,37 +36,26 @@ function App() {
     setCartCount(cartCount - qty);
   };
 
-  // 장바구니 추가
   const addCartCount = (item) => {
-    console.log("item--> ", item); //{id:1, size:XS, qty:1}
-
-    //cartItems에 item 추가!! - 상품아이디와 사이즈가 동일한 경우에는 수량을 하나 증가시킴!
-    //1. 상품아이디와 사이즈가 동일한 아이템이 있으면 해당 인덱스를 저장 - findIndex
     const updateItemIndex = cartItems.findIndex(
       (cartItem) => cartItem.id === item.id && cartItem.size === item.size
     );
-    console.log("index--", updateItemIndex);
-    //2. 인덱스가 -1 이 아니면 ==> qty 증가
-    //   -1 이면 새로 추가
+
     if (updateItemIndex !== -1) {
-      // 기존 item 존재
       const updateItems = [...cartItems];
       updateItems[updateItemIndex].qty++;
       setCartItems(updateItems);
     } else {
-      // 새로운 item
       setCartItems([...cartItems, item]);
     }
 
     setCartCount(cartCount + 1);
   };
-  console.log("App :: cartItems--> ", cartItems);
 
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <Root cartCount={cartCount} /> /** layout 정의 */,
-      // loader: rootLoader,
+      element: <Root cartCount={cartCount} />,
       children: [
         { path: "/", element: <Home /> },
         { path: "/products", element: <AllProducts /> },
@@ -85,12 +77,24 @@ function App() {
         { path: "/drinks", element: <Drinks /> },
         { path: "/daily", element: <Daily /> },
         { path: "/etc", element: <Etc /> },
-        { path: "/board", element: <Board /> },
+        { path: "/products", element: <Product /> },
       ],
     },
   ]);
 
-  return <RouterProvider router={router} />;
+  return (
+    <>
+      <RouterProvider router={router} />
+      <Modal
+        isOpen={isModalOpen}
+        onClose={closeModal}
+        imageUrl="/images/modal.jpg"
+      >
+        <h2>안녕하세요</h2>
+        <p>사이트에 궁금한 점이 있다면 언제든 연락주세요.</p>
+      </Modal>
+    </>
+  );
 }
 
 export default App;
